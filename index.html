@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diva Calculator</title>
+    <link rel="icon" type="image/x-icon" href="pnjj.png ">
+
+    <script src="https://kit.fontawesome.com/421cfd4472.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="basic">
+                <div class="cal">
+                    <img src="basic-calculator-screenshot.png" alt="">
+                    <p>Calculator</p>
+                </div>
+                <div class="iconn">
+                    <i class="fa-solid fa-minus"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <form>
+                <div class="display">
+                    <input type="text" name="display" readonly>
+                </div>
+             
+                <div>
+                    <input onclick="display.value = '' " type="button" value="AC">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="\">
+                    <input onclick="display.value = '' " type="button" value="x">
+
+                </div>
+                <div>
+                    <input onclick="display.value += '7' " type="button" value="7">
+                    <input onclick="display.value += '8' " type="button" value="8">
+                    <input onclick="display.value += '9' " type="button" value="9">
+                    <input onclick="display.value += '*' " type="button" value="*">
+
+                </div>
+                <div> 
+                    <input onclick="display.value += '4' "  type="button" value="4">
+                    <input onclick="display.value += '5' " type="button" value="5">
+                    <input onclick="display.value += '6' " type="button" value="6">
+                    <input onclick="display.value += '-' " type="button" value="-">
+                </div>
+                <div>
+                    <input onclick="display.value += '1' " type="button" value="1">
+                    <input onclick="display.value += '2' " type="button" value="2">
+                    <input onclick="display.value += '3' " type="button" value="3">
+                    <input onclick="display.value += '+' " type="button" value="+">
+
+                </div>
+                <div>
+                    <input onclick="display.value += '00' " type="button" value="00">
+                    <input onclick="display.value += '0' " type="button" value="0">
+                    <input onclick="display.value += '.' " type="button" value=".">
+                    <input onclick="display.value = eval(display.value)" class="diff" type="button" value="=">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>   
+</html>
